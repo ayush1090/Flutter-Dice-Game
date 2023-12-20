@@ -84,10 +84,11 @@ class _DicePageState extends State<DicePage> {
             child: TextButton(
               onPressed: () {
                 //print('Right Button Got Pressed');
-                setState(() {
-                  rightDiceNo = Random().nextInt(6)+1; // 1 to 6
-                  leftDiceNo = Random().nextInt(6)+1;
-                });
+                // setState(() {
+                //   rightDiceNo = Random().nextInt(6)+1; // 1 to 6
+                //   leftDiceNo = Random().nextInt(6)+1;
+                // });
+                changeDiceFace();
               },
               child: Image.asset('images/dice$rightDiceNo.png'),
             ),
